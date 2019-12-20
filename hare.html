@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+var Harivansh rai bachchan = 0;
+var Amitabh bachchan = 0;
+function Harivansh()
+{
+Harivansh rai bachchan= Harivansh rai bachchan +1;
+document.getElementById('Harivansh_rai_bachchan').innerHTML = Harivansh rai bachchan;
+}
+
+function Amitabh()
+{
+Amitabh bachchan= Amitabh bachchan+1;
+document.getElementById('Amitabh_bachchan').innerHTML = Amitabh bachchan;
+}
+
+
+</script>
+
+<style>
+body {margin:25px;}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<center> <h2>VOTING </h2>
+<div class="row">
+  <div class="column">
+    <img src="hari.jpg" alt="Hari" >
+</div>
+  <div class="column">
+    <img src="abhi.jpg" alt="Amitabh_bachchan" >
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+   <div id=" Harivansh_rai_bachchan">  <p>   0  </p></div>
+    <input type="button" onclick="Harivansh();"  class="button" value="VOTE Harivansh rai bachchan">
+  </div>
+  <div class="column">
+  <div id="Amitabh_bachchan">  <p>    0  </p></div>
+    <input type="button" onclick="Amitabh();"  class="button" value="VOTE Amitabh bachchan">
+  </div>
+</div>
+
+
+</center>
+</body>
+</html>
